@@ -1,4 +1,6 @@
-from src.tools.tools import web_search
+from src.tools.tools import web_search,scrape_url
 
 
-web_search("what is latest news on ai research")
+output=web_search.invoke("what is the latest news on AI")
+
+print(output)
