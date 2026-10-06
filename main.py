@@ -1,6 +1,5 @@
-from src.tools.tools import web_search,scrape_url
+from src.pipeline.pipeline import run_research_pipeline
 
+topic="impact of AI on job market in 2026"
 
-output=web_search.invoke("what is the latest news on AI")
-
-print(output)
+run_research_pipeline(topic)

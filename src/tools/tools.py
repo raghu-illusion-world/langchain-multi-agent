@@ -10,7 +10,7 @@ import trafilatura
 import re
 
 
-load_dotenv
+load_dotenv()
 
 
 tavily=TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
@@ -133,4 +133,3 @@ def scrape_url(url: str) -> str:
 
     except Exception as e:
         return f"Could not scrape URL: {str(e)}"
-
